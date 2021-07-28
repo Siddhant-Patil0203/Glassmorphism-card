@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Glassmorphism Cards</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Monda">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>
+    <body>
+        <main>
+        <div class = "container">
+            <div class = "glasscard">
+                <h1>01</h1>
+                <div class = "content">
+                    <div class = "img1"><img src ="mark-zuckerberg.jpg" alt =""></div>                    
+                    <h2>Mark Zuckerberg</h2>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <h3>"The biggest risk is not talking any risk."</h3>
+                    <a href = "#">Read More</a>
+                </div>
+            </div>
+            <div class="glasscard">
+                <h1>02</h1>
+                <div class="content">
+                    <div class="img1"><img src="stevejobs.jpg" alt=""></div>
+                    <h2>Steve Jobs</h2>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <h3>"Stay Hungry, Stay Foolish."</h3>
+                    <a href="#">Read More</a>
+                </div>    
+            </div>
+            <div class="glasscard">
+                <h1>03</h1>
+                <div class="content">
+                    <div class="img1"><img src="Warren-Buffett.jpg" alt=""></div>                    
+                    <h2>Warren Buffett</h2>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <h3>"If you don't find a way to make money while you sleep, you will work untill you die."</h3>
+                    <a href="#">Read More</a>
+                </div>    
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="footer_content">
+                <h4>Siddhant Patil</h4>
+                <ul class="social"> 
+                <li><a href="https://github.com/Siddhant-Patil0203" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/siddhant-patil-934113205/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/sidd.0203/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/siddhant.patil.792303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <p>copyright &copy;2021 Siddhant Patil</p>
+            </div>
+        </footer>
+    
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".glasscard"), {
+		    max: 25,speed: 400});
+        </script>
+    </body>
+</html>

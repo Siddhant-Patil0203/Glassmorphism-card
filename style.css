@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monda;
+}
+body{
+    min-height: 100vh;
+    background: #161623;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .glasscard{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+}
+.container .glasscard h1{
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    font-size: 8em;
+    color:rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .glasscard .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    transform: translateY(100px);
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.container .glasscard:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .glasscard .content h2{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.container .glasscard .content i{
+    margin-top: 5px;
+    color: white;
+    font-size: 28px;
+    opacity: 0;
+}
+.container .glasscard:hover .content i{
+    opacity: 1;
+}
+.container .glasscard .content h3{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0;
+}
+.container .glasscard:hover .content h3{
+    opacity:1;
+}
+.container .glasscard .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background:#2196f3;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.container .glasscard:hover .content a{
+    opacity: 1;
+}
+.container .glasscard .content .img1 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+.container .glasscard .content .img1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    text-align: center;
+    padding-top: 40px;
+}
+.footer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_content h4{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #fff;
+}
+.footer_content .social{
+    list-style: none;
+    display: flex;
+    margin: 1rem 0 3rem 0;
+}
+.footer_content .social li{
+    margin: 0 15px;
+}
+.footer_content .social li a{
+    color: #fff;
+}
+.footer_content .social li a i{
+    font-size: 1.6rem;
+    transition: color .4s ease;
+}
+.footer_content .social li a:hover i{
+    color: rgb(0, 162, 255);
+    font-size: 2.2rem;
+}
+.footer_bottom{
+    background: #000;
+    padding: 20px 0;
+    color:#fff;
+}
+.footer_bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: uppercase;  
+}
